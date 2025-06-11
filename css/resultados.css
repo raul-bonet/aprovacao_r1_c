@@ -29,7 +29,26 @@ tr:nth-child(even) {
     font-weight: bold;
 }
 
-.container button {
-    width: 100%;
-    margin-top: 20px;
+.botoes-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#voltarBtn {
+    flex: 1;
+    background-color: #e67e22;
+}
+
+#voltarBtn:hover {
+    background-color: #d35400;
+}
+
+#limparBtn {
+    flex: 1;
+    background-color: #e74c3c;
+}
+
+#limparBtn:hover {
+    background-color: #c0392b;
 }
