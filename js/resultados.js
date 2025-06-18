@@ -1,4 +1,3 @@
-// Armazenamento dos alunos
 let alunos = JSON.parse(localStorage.getItem('alunos')) || [];
 
 // Função para exibir os resultados na segunda página
