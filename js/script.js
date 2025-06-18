@@ -45,4 +45,5 @@ document.getElementById('alunoForm').addEventListener('submit', function(e) {
 
 document.getElementById('verAlunosBtn').addEventListener('click', function() {
     window.location.href = 'resultados.html';
+
 });

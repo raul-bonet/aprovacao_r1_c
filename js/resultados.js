@@ -1,9 +1,12 @@
-let alunos = JSON.parse(localStorage.getItem('alunos')) || [];
-
-// Função para exibir os resultados na segunda página
 document.addEventListener('DOMContentLoaded', function() {
     const corpoTabela = document.getElementById('corpoTabela');
-    
+    const alunos = JSON.parse(localStorage.getItem('alunos')) || [];
+
+    if (alunos.length === 0) {
+        corpoTabela.innerHTML = '<tr><td colspan="7">Nenhum aluno cadastrado ainda.</td></tr>';
+        return;
+    }
+
     alunos.forEach(aluno => {
         const media = parseFloat(aluno.media);
         const frequencia = aluno.frequencia;
